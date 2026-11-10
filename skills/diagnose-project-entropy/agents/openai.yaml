@@ -1,0 +1,13 @@
+interface:
+  display_name: 项目毒舌吐槽大会
+  short_description: 把源码诊断变成犀利爆笑的中文吐槽表演，不输出修复方案
+  default_prompt: 用 $diagnose-project-entropy 深入诊断当前仓库，然后把确凿的坏设计写成一场能出圈的中文毒舌吐槽大会：先捧、猛喷、最后回扣补刀。要荒诞类比、递进包袱和自然粗口，不要修复建议、行动清单或审计表格。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

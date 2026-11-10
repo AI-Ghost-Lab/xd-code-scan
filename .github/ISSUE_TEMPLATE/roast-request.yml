@@ -1,0 +1,41 @@
+name: 申请项目吐槽（公开仓库）
+description: 推荐一个有权公开展示的项目，成为下一期「项目吐槽大会」候选
+title: "[Roast Request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎来上台！**本 Issue 是公开的。不要粘贴私有代码、密码、Token、内部日志或未公开漏洞。**
+        提交只代表推荐，**不代表项目一定会被选中或公开制作内容**。
+  - type: input
+    id: repository
+    attributes:
+      label: 公开仓库链接
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: pain
+    attributes:
+      label: 这个项目哪里让你血压上来了？
+      description: 用人话描述一两个你最想被吐槽的现象，不必自行诊断。
+      placeholder: 比如：说是新架构，但旧逻辑删不掉；改一个按钮会影响五个模块……
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: 你与项目的关系
+      options:
+        - 我是作者或维护者
+        - 我是贡献者
+        - 我是普通使用者／围观群众
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 发布与隐私确认
+      options:
+        - label: 我确认只提交有权公开分享的信息，理解这个 Issue 对所有人可见。
+          required: true
